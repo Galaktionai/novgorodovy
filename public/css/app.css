@@ -1,0 +1,1468 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro ExBd';
+    src: url('../fonts/OrchideaPro-ExtraBold.eot');
+    src: local('Orchidea Pro ExtraBold'), local('OrchideaPro-ExtraBold'),
+        url('../fonts/OrchideaPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-ExtraBold.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-ExtraBold.woff') format('woff'),
+        url('../fonts/OrchideaPro-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('../fonts/OrchideaPro-Bold.eot');
+    src: local('Orchidea Pro Bold'), local('OrchideaPro-Bold'),
+        url('../fonts/OrchideaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-Bold.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-Bold.woff') format('woff'),
+        url('../fonts/OrchideaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Lt';
+    src: url('../fonts/OrchideaPro-LightItalic.eot');
+    src: local('Orchidea Pro Light Italic'), local('OrchideaPro-LightItalic'),
+        url('../fonts/OrchideaPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-LightItalic.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-LightItalic.woff') format('woff'),
+        url('../fonts/OrchideaPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro SmBd';
+    src: url('../fonts/OrchideaPro-SemiBold.eot');
+    src: local('Orchidea Pro SemiBold'), local('OrchideaPro-SemiBold'),
+        url('../fonts/OrchideaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-SemiBold.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-SemiBold.woff') format('woff'),
+        url('../fonts/OrchideaPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Bk';
+    src: url('../fonts/OrchideaPro-BlackItalic.eot');
+    src: local('Orchidea Pro Black Italic'), local('OrchideaPro-BlackItalic'),
+        url('../fonts/OrchideaPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-BlackItalic.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-BlackItalic.woff') format('woff'),
+        url('../fonts/OrchideaPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Bk';
+    src: url('../fonts/OrchideaPro-Black.eot');
+    src: local('Orchidea Pro Black'), local('OrchideaPro-Black'),
+        url('../fonts/OrchideaPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-Black.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-Black.woff') format('woff'),
+        url('../fonts/OrchideaPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('../fonts/OrchideaPro-Regular.eot');
+    src: local('Orchidea Pro Regular'), local('OrchideaPro-Regular'),
+        url('../fonts/OrchideaPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-Regular.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-Regular.woff') format('woff'),
+        url('../fonts/OrchideaPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro SmBd';
+    src: url('../fonts/OrchideaPro-SemiBoldItalic.eot');
+    src: local('Orchidea Pro SemiBold Italic'), local('OrchideaPro-SemiBoldItalic'),
+        url('../fonts/OrchideaPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/OrchideaPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('../fonts/OrchideaPro-BoldItalic.eot');
+    src: local('Orchidea Pro Bold Italic'), local('OrchideaPro-BoldItalic'),
+        url('../fonts/OrchideaPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-BoldItalic.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-BoldItalic.woff') format('woff'),
+        url('../fonts/OrchideaPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Md';
+    src: url('../fonts/OrchideaPro-MediumItalic.eot');
+    src: local('Orchidea Pro Medium Italic'), local('OrchideaPro-MediumItalic'),
+        url('../fonts/OrchideaPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-MediumItalic.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-MediumItalic.woff') format('woff'),
+        url('../fonts/OrchideaPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro ExLt';
+    src: url('../fonts/OrchideaPro-ExtraLightItalic.eot');
+    src: local('Orchidea Pro ExtraLight Italic'), local('OrchideaPro-ExtraLightItalic'),
+        url('../fonts/OrchideaPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/OrchideaPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Md';
+    src: url('../fonts/OrchideaPro-Medium.eot');
+    src: local('Orchidea Pro Medium'), local('OrchideaPro-Medium'),
+        url('../fonts/OrchideaPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-Medium.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-Medium.woff') format('woff'),
+        url('../fonts/OrchideaPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro ExLt';
+    src: url('../fonts/OrchideaPro-ExtraLight.eot');
+    src: local('Orchidea Pro ExtraLight'), local('OrchideaPro-ExtraLight'),
+        url('../fonts/OrchideaPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-ExtraLight.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-ExtraLight.woff') format('woff'),
+        url('../fonts/OrchideaPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro';
+    src: url('../fonts/OrchideaPro-Italic.eot');
+    src: local('Orchidea Pro Italic'), local('OrchideaPro-Italic'),
+        url('../fonts/OrchideaPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-Italic.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-Italic.woff') format('woff'),
+        url('../fonts/OrchideaPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro ExBd';
+    src: url('../fonts/OrchideaPro-ExtraBoldItalic.eot');
+    src: local('Orchidea Pro ExtraBold Italic'), local('OrchideaPro-ExtraBoldItalic'),
+        url('../fonts/OrchideaPro-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/OrchideaPro-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Orchidea Pro Lt';
+    src: url('../fonts/OrchideaPro-Light.eot');
+    src: local('Orchidea Pro Light'), local('OrchideaPro-Light'),
+        url('../fonts/OrchideaPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OrchideaPro-Light.woff2') format('woff2'),
+        url('../fonts/OrchideaPro-Light.woff') format('woff'),
+        url('../fonts/OrchideaPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body{
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button{
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+  padding: 0 16px;
+  max-width: 1456px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.block_1{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+}
+
+.block_1 img{
+  width: 100%;
+  height: 1080px;
+  object-fit: cover;
+}
+
+.block_1__txt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.block_1__txt__img_top{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 234px !important;
+  height: 254px !important;
+}
+
+.block_1__txt__img_bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 220px !important;
+  height: 270px !important;
+}
+
+.block_1__date{
+  color: #424242;
+  font-size: 26px;
+  display: block;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.block_1__title{
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  text-align: center;
+  color: #6B7337;
+  display: flex;
+  flex-direction: column;
+}
+
+.block_2{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/block_2.jpg) no-repeat;
+  background-size: cover;
+  padding: 80px 0 152px;
+}
+
+.block_2__wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block_2__txt{
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  max-width: 669px;
+  backdrop-filter: blur(4px);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+-moz-box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  margin-bottom: 16px;
+  border: 1px solid #aeaeae;
+}
+
+.block_2__title{
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.block_2__pre_txt{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Orchidea Pro Lt';
+}
+
+.block_2__callendar{
+  padding: 32px 67px;
+  display: flex;
+  flex-direction: column;
+  max-width: 669px;
+  backdrop-filter: blur(4px);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+-moz-box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  border: 1px solid #787878;
+}
+
+.block_2__callendar__title{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  display: block;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+
+.block_2__callendar__wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 24px 40px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Orchidea Pro Lt';
+}
+
+.block_2__callendar__wrap .active{
+  position: relative;
+}
+
+.block_2__callendar__wrap .active svg{
+  position: absolute;
+  left: -12px;
+  top: -15px;
+  z-index: -1;
+}
+
+.block_3{
+  padding: 80px 0;
+}
+
+.block_3__wrap{
+  display: grid;
+  grid-template-columns: 502px 1fr;
+  gap: 105px;
+  align-items: center;
+}
+
+.block_3__map{
+  background: #E6E6E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 438px;
+  width: 100%;
+}
+
+.block_3__txt{
+  display: flex;
+  flex-direction: column;
+}
+
+.block_3__txt__title{
+  color: #6B7337;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.block_3__txt__pre_text{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  text-align: center;
+  display: block;
+  margin-bottom: 32px;
+  font-family: 'Orchidea Pro';
+}
+
+.block_3__btn{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 24px 14px;
+  color: #FFFFFF;
+  background: #6B7337;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  letter-spacing: 0%;
+  margin: 0 auto;
+  font-family: 'Orchidea Pro Md';
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.block_4{
+  padding: 80px 0;
+}
+
+.block_4__wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block_4__wrap__img_1{
+  width: 482px;
+  height: 449px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.block_4__wrap__img_2{
+  width: 342px;
+  height: 334px;
+  object-fit: cover;
+  border: 8px solid #FFFFFF;
+  position: absolute;
+  left: 260px;
+  top: 200px;
+}
+
+.block_4__date{
+  background: #F9FAEB;
+  border-radius: 32px;
+  padding: 40px 32px;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block_4__date__time{
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 100%;
+  color: #6B7337;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.block_4__date__text{
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 52px;
+  font-family: 'Orchidea Pro Lt';
+}
+
+.block_4__date__line{
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #6B7337;
+  margin-bottom: 52px;
+}
+
+.block_4__date__text.two{
+  margin-bottom: 0;
+}
+
+.block_5{
+  padding: 80px 0;
+}
+
+.block_5__title{
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 100%;
+  text-align: center;
+  color: #6B7337;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.block_5__pre_title{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  max-width: 904px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 51px;
+  font-family: 'Orchidea Pro';
+}
+
+.block_5__colors{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.block_5__colors span{
+  height: 80px;
+  width: 100%;
+}
+
+.block_5__images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.block_5__images__wrap{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.block_5__images img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.block_6{
+  padding: 60px 0 68px;
+}
+
+.block_6__title{
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 100%;
+  text-align: center;
+  color: #6B7337;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.block_6__pre_txt{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  display: block;
+  color: #000000;
+  font-family: 'Orchidea Pro';
+  max-width: 621px;
+  margin: 0 auto 20px;
+}
+
+.block_6__pre_txt_info{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+  color: #808080;
+  font-family: 'Orchidea Pro';
+}
+
+/* From Uiverse.io by Pradeepsaranbishnoi */ 
+.radio-button {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  align-items: center;
+  color: #000000;
+  font-family: 'Orchidea Pro';
+}
+
+
+.radio-button input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  transform: translateZ(-25px);
+  transition: all 0.3s ease-in-out;
+}
+
+.radio::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  top: 7px;
+  left: 7px;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-button input[type="radio"]:checked + .radio {
+  border-color: #000;
+  transform: translateZ(0px);
+  background-color: #fff;
+}
+
+.radio-button input[type="radio"]:checked + .radio::before {
+  opacity: 1;
+}
+
+.block_6__form{
+  max-width: 954px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.block_6__form__title{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  font-family: 'Orchidea Pro';
+}
+
+.block_6__form__input{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+  padding: 12px 0 9px;
+  background: unset;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #000000;
+  margin: 16px 0 32px;
+  font-family: 'Orchidea Pro';
+}
+
+.block_6__form__button{
+  font-family: 'Orchidea Pro Md';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 16px 24px 14px;
+  background: #6B7337;
+  color: #FFFFFF;
+  margin: 40px auto 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.radio-button.first{
+  margin: 16px 0 12px;
+}
+
+.block_7{
+  padding: 60px 0;
+}
+
+.block_7__title{
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+  color: #6B7337;
+}
+
+.block_7__wrap{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.block_7__wrap img{
+  object-fit: cover;
+  width: 277px;
+
+}
+
+.block_7__wrap__stars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.block_7__wrap__bless{
+  display: grid;
+  gap: 32px;
+}
+
+.block_7__wrap__bless span{
+  font-family: 'Orchidea Pro Lt';
+  font-weight: 300;
+  font-style: Light;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.block_8{
+  padding: 60px 0;
+}
+
+.block_8__pre_txt{
+  font-family: 'Orchidea Pro Lt';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  display: block;
+  color: #000000;
+  max-width: 658px;
+  margin: 0 auto 40px;
+}
+
+.block_8__wrap{
+  display: flex;
+  justify-content: space-between;
+  max-width: 742px;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.block_8__wrap__txt{
+  font-family: 'Orchidea Pro Lt';
+  font-weight: 300;
+  font-style: Light;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.block_8__wrap__button{
+  padding: 16px 24px 14px;
+  font-family: 'Orchidea Pro Md';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #6B7337;
+}
+
+.block_9{
+  padding: 60px 0 75px;
+}
+
+.block_9__title{
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  display: block;
+  margin-bottom: 64px;
+  color: #6B7337;
+}
+
+.block_9__timer{
+  display: flex;
+  max-width: 756px;
+  width: 100%;
+  margin: 0 auto 64px;
+  justify-content: space-between;
+}
+
+.block_9__timer__item{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block_9__timer__item__number{
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 120px;
+  line-height: 100%;
+  text-align: center;
+  color: #6B7337;
+}
+
+.block_9__timer__item__txt{
+  color: #6B7337;
+  font-family: 'Orchidea Pro Lt';
+  font-weight: 300;
+  font-style: Light;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.block_9__ent__txt{
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 52px;
+  line-height: 100%;
+  text-align: center;
+  display: block;
+  color: #6B7337;
+}
+
+
+
+.swiper {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 64px;
+      border-radius: 32px;  
+    }
+
+    .swiper-slide {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      border-radius: 32px;
+      object-fit: contain;
+      background-size: cover;
+      position: relative;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 700px;
+      object-fit: contain;
+      background-size: cover;
+      background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/block_2.jpg) no-repeat;
+    }
+
+    .swiper-slide__filter{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      object-fit: cover !important;
+      filter: blur(12px) brightness(0.9);
+    }
+
+.swiper-button-next,.swiper-button-prev{
+  color: #fff !important;
+}
+
+.swiper-pagination.gala{
+  top: -24px !important;
+  position: relative !important;
+}
+
+.pagination__slider{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 4px;
+}
+
+.swiper-pagination-bullet{
+  width: 100% !important;
+  border-radius: 4px !important;
+  height: 2px !important;
+  background: #E6E6E6 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: #6B7337 !important;
+}
+
+.block_5__images__left__img{
+  height: 100%;
+}
+
+.block_1__after{
+  display: none;
+}
+
+.block_4__wrap__mobile{
+  display: none;
+}
+
+.block_4__wrap__desctop{
+  display: block;
+}
+
+.block_3__btn__mobile{
+  display: none;
+}
+
+.block_7__wrap__images{
+  display: none;
+}
+
+.admin__header{
+  padding: 24px 0;
+  background: #123056;
+}
+
+.admin__header h1{
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.admin__filter{
+  padding: 16px 0;
+  margin-bottom: 16px;
+  background: #efefef;
+}
+
+.admin__filter div{
+  display: flex;
+  gap: 12px;
+}
+
+.admin__filter a{
+  text-decoration: none;
+  color: #000;
+  font-family: sans-serif;
+  padding: 12px 24px;
+  background: #bac6d6;
+  border-radius: 24px;
+}
+
+.admin__table{
+  font-family: sans-serif;
+  margin-bottom: 64px;
+}
+
+.admin__table .active{
+background: #bddfc6;
+}
+
+.admin__table .no_active{
+  background: #dfbdbd;
+}
+
+.admin__table thead{
+  background: #f5f5f5;
+}
+
+.admin__table td, th{
+  border: 1px solid #b0b0b0;
+}
+
+.modal{
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.hystmodal--active .hystmodal__window{
+  border-radius: 12px;
+}
+
+.hystmodal__window.load{
+  background: unset;
+}
+
+.modal__title{
+  display: block;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: #6B7337;
+  margin-bottom: 24px;
+}
+
+.modal__txt{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Orchidea Pro Lt';
+}
+
+.modal__close{
+  background: unset;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.modal__close__btn{
+  font-family: 'Orchidea Pro Md';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 16px 24px 14px;
+  background: #6B7337;
+  color: #FFFFFF;
+  margin: 24px auto 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  color: #929b58;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  background-color: #929b58;
+  border-radius: 50%;
+  animation: scale50 1s infinite ease-in-out;
+}
+.loader::before {
+  top: auto;
+  bottom: 0;
+  background-color: #6B7337;
+  animation-delay: 0.5s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale50 {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .block_4__date{
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .block_1{
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .block_1__txt__img_top, .block_1__txt__img_bottom{
+    display: none;
+  }
+
+  .block_1__txt{
+    position: absolute;
+    bottom: 56px;
+    width: 100%;
+  }
+
+  .block_1 img{
+    height: 100vh;  
+    position: relative;
+  }
+
+  .block_1__after{
+    content: '';
+    display: block;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    height: 50vh; 
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .block_4__wrap{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .block_7__wrap{
+    flex-wrap: wrap;
+  }
+
+  .block_3__wrap{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .block_2__txt{
+    padding: 16px 28px;
+    margin-bottom: 8px;
+    max-width: 358px;
+  }
+
+  .block_2__callendar{
+    padding: 16px 34px;
+  }
+
+  .block_2__callendar__wrap{
+    gap: 14px 20px;
+  }
+
+  .block_4__wrap__img_1{
+    aspect-ratio: 1/1;
+    width: 70%;
+    height: auto;
+  }
+
+  .block_4__wrap__img_2{
+    aspect-ratio: 1/1;
+    width: 70%;
+    height: auto;
+    right: 0;
+    left: auto;
+  }
+
+  .block_4__wrap__mobile{
+    display: block;
+  }
+
+  .block_4__wrap__mobile img{
+    width: 100%;
+  }
+
+  .block_4__wrap__desctop{
+    display: none;
+  }
+
+  .block_4__date{
+    margin-right: 0;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+
+  .block_2{
+    padding: 32px 0 142px;
+    background-position-y: 76px;
+    background-position-x: center;
+  }
+
+  .block_2__title{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .block_2__pre_txt{
+    font-size: 15px;  
+  }
+
+  .block_2__callendar__title{
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .block_2__callendar__wrap{
+    font-size: 15px;
+  }
+
+  .block_2__callendar__wrap .active svg{
+    width: 100%;
+    height: 36px;
+    left: 0px;
+    right: 0;
+    top: -12px;
+  }
+
+  .block_3__txt__title{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .block_3{
+    padding: 32px 0;
+  }
+
+  .block_3__txt__pre_text{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  .block_3__btn__mobile{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 16px 24px;
+    color: #FFFFFF;
+    background: #6B7337;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    letter-spacing: 0%;
+    margin: 0 auto;
+    font-family: 'Orchidea Pro Md';
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .block_3__btn{
+    display: none;
+  }
+
+  .block_3__map{
+    height: 180px;
+  }
+
+  .block_4__date__time{
+    font-size: 80px;
+  }
+
+  .block_4__date__text{
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .block_4__date__line{
+    margin-bottom: 24px;
+  }
+
+  .block_4{
+    padding: 0 0 32px;
+  }
+
+  .block_5{
+    padding: 32px 0;
+  }
+
+  .block_5__title{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .block_5__pre_title{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+
+  .block_5__colors{
+    margin-bottom: 24px;
+    gap: 4px;
+  }
+
+  .block_5__colors span{
+    height: 36px;
+  }
+
+  .block_5__images{
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .block_5__images__wrap{
+    gap: 7px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .block_5__images__left__img{
+    display: none;
+  }
+
+  .block_6{
+    padding: 32px 0;
+  }
+
+  .block_6__title{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .block_6__pre_txt{
+    font-size: 15px;
+    line-height: 20px;
+        margin: 0 auto 16px;
+  }
+  
+  .block_6__pre_txt_info{
+    font-size: 15px;
+    line-height: 20px;
+        margin: 0 auto 20px;
+  }
+
+  .block_6__pre_txt_info{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .radio-button{
+    font-size: 14px;
+  }
+
+  .radio{
+    width: 20px;
+    height: 20px;
+  }
+
+  .radio::before{
+        top: 3px;
+    left: 3px;
+  }
+
+  .block_6__form__button{
+        margin: 32px auto 0;
+  }
+
+  .block_7{
+    padding: 32px 0;
+  }
+
+  .block_7__title{
+    font-size: 24px;
+  }
+
+  .block_7__wrap__bless span{
+    font-size: 15px;
+
+  }
+
+  .block_7__wrap__bless{
+    gap: 12px;
+  }
+
+  .block_7__wrap img{
+    display: none;
+  }
+
+  .block_7__wrap__images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .block_7__wrap__images img{
+    display: block;
+    width: 100%;
+  }
+
+  .block_8{
+    padding: 32px 0;
+  }
+
+  .block_7__title{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .block_8__pre_txt{
+    font-size: 15px;
+    line-height: 20px;
+        margin: 0 auto 32px;
+  }
+
+  .block_8__wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .block_8__wrap__txt{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .block_8__wrap__button{
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .block_8__wrap div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .block_9{
+    padding: 32px 0;
+  }
+
+  .block_9__title{
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .block_9__timer__item__number{
+    font-size: 36px;
+  }
+
+  .block_9__timer__item__txt{
+    font-size: 14px;
+  }
+
+  .block_9__timer{
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .swiper-slide img{
+    height: 446px;
+  }
+
+  .swiper{
+    margin-bottom: 24px;
+  }
+
+  .block_9__ent__txt{
+    font-size: 32px;
+  }
+}
