@@ -32,6 +32,7 @@
                   <th>Имя</th>
                   <th>Придёт?</th>
                   <th>Дата отправки</th>
+                  <th>Удалить</th>
               </tr>
           </thead>
           <tbody>
@@ -42,6 +43,13 @@
                       <td>{{ $guest->name }}</td>
                       <td>{{ $guest->come ? 'Да' : 'Нет' }}</td>
                       <td>{{ $guest->created_at->format('d.m.Y H:i') }}</td>
+                      <td>
+                            <form action="{{ route('guests.destroy', $guest->id) }}" method="POST" onsubmit="return confirm('Удалить этого гостя?')">
+                                @csrf
+                                @method('DELETE')
+                                <button class="admin__delete__come">Удалить</button>
+                            </form>
+                        </td>
                   </tr>
               @empty
                   <tr>

@@ -22,3 +22,5 @@ Route::get('/', function () {
 Route::post('/rsvp-submit', [RsvpController::class, 'store'])->name('rsvp.submit');
 
 Route::get('/admin/guests', [AdminController::class, 'index'])->name('admin.guests');
+
+Route::delete('/guests/{id}', [App\Http\Controllers\AdminController::class, 'destroy'])->name('guests.destroy');

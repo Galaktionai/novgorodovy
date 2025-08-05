@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>Новгородовы</title>
         <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,8 +12,44 @@
     </head>
     <body>
         <main>
+            <div class="music__wrap">
+                <audio id="bgMusic" loop autoplay>
+                    <source src="{{ asset('/audio/audio.mp3') }}">
+                </audio>
+
+                <input type="checkbox" id="toggleMusicBtn" />
+                <label for="toggleMusicBtn" class="toggleSwitch">
+                    <div class="speaker">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                        <path
+                            d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z"
+                            style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"
+                        ></path>
+                        <path
+                            d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6"
+                            style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"
+                        ></path>
+                        </svg>
+                    </div>
+
+                    <div class="mute-speaker">
+                        <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                        <path
+                            d="m39,14-17,15H6V48H22l17,15z"
+                            fill="#fff"
+                            stroke-linejoin="round"
+                        ></path>
+                        <path
+                            d="m49,26 20,24m0-24-20,24"
+                            fill="#fff"
+                            stroke-linecap="round"
+                        ></path>
+                        </svg>
+                    </div>
+                </label>
+            </div>
             <div class="block_1">
-                <img src="{{ asset('img/block1.jpg') }}" alt="">
+                <img src="{{ asset('img/block1.webp') }}" alt="">
                 <div class="block_1__after"></div>
                 <div class="block_1__txt" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
                     <div>
@@ -28,8 +64,8 @@
                             НЮРГУЯНА
                         </span>
                     </div>
-                    <img class="block_1__txt__img_top" src="{{ asset('img/flowers-2.png') }}" alt="">
-                    <img class="block_1__txt__img_bottom" src="{{ asset('img/flowers.png') }}" alt="">
+                    <img class="block_1__txt__img_top" src="{{ asset('img/flowers-2.webp') }}" alt="">
+                    <img class="block_1__txt__img_bottom" src="{{ asset('img/flowers.webp') }}" alt="">
                 </div>
             </div>
             <div class="block_2">
@@ -102,7 +138,7 @@
                                 ВРЕМЯ И МЕСТО ПРОВЕДЕНИЯ
                             </span>
                             <span class="block_3__txt__pre_text">
-                                Торжество будет проходить в банкетном зале Ланика по адресу ул.Чернышевского, д.69
+                                Торжество будет проходить в банкетном зале «Ланика» по адресу: г. Якутск, ул.Чернышевского, д.69
                             </span>
                             <a class="block_3__btn" href="https://go.2gis.com/UjNXY" target="_blank">
                                 ПОСТРОИТЬ МАРШРУТ
@@ -122,11 +158,11 @@
                 <div class="container">
                     <div class="block_4__wrap">
                         <div class="block_4__wrap__mobile">
-                            <img src="{{ asset('img/2-photo.png') }}" alt="">
+                            <img src="{{ asset('img/2-photo.webp') }}" alt="">
                         </div>
                         <div class="block_4__wrap__desctop" style="position: relative;" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-                            <img class="block_4__wrap__img_1" src="{{ asset('img/photo-1.jpg') }}" alt="">
-                            <img class="block_4__wrap__img_2" src="{{ asset('img/photo-2.jpg') }}" alt="">
+                            <img class="block_4__wrap__img_1" src="{{ asset('img/photo-1.webp') }}" alt="">
+                            <img class="block_4__wrap__img_2" src="{{ asset('img/photo-2.webp') }}" alt="">
                         </div>
                         <div class="block_4__date" data-aos="fade-left" data-aos-duration="1000">
                             <span class="block_4__date__time">16:00</span>
@@ -151,60 +187,20 @@
                         <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350" style="background-color: #E2E1DD;"></span>
                     </div>
                     <div class="block_5__images">
-                        <img class="block_5__images__left__img" data-aos-duration="1000" src="{{ asset('img/dress-cod-1.jpg') }}" data-aos="fade-up" data-aos-delay="300" alt="">
+                        <img class="block_5__images__left__img" data-aos-duration="1000" src="{{ asset('img/dress-cod-1.webp') }}" data-aos="fade-up" data-aos-delay="300" alt="">
                         <div class="block_5__images__wrap">
-                            <img src="{{ asset('img/dress-cod-2.jpg') }}" data-aos="fade-up" data-aos-delay="200" alt="">
-                            <img style="object-position: bottom;" data-aos-duration="1000" src="{{ asset('img/dress-cod-5.jpg') }}" data-aos="fade-up" data-aos-delay="400" alt="">
+                            <img src="{{ asset('img/dress-cod-2.webp') }}" data-aos="fade-up" data-aos-delay="200" alt="">
+                            <img style="object-position: bottom;" data-aos-duration="1000" src="{{ asset('img/dress-cod-5.webp') }}" data-aos="fade-up" data-aos-delay="400" alt="">
                         </div>
                         <div class="block_5__images__wrap">
-                            <img src="{{ asset('img/dress-cod-3.jpg') }}" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="100" alt="">
-                            <img style="object-position: top;" data-aos-duration="1000" src="{{ asset('img/dress-cod-6.jpg') }}" data-aos="fade-up" data-aos-delay="500" alt="">
+                            <img src="{{ asset('img/dress-cod-3.webp') }}" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="100" alt="">
+                            <img style="object-position: top;" data-aos-duration="1000" src="{{ asset('img/dress-cod-6.webp') }}" data-aos="fade-up" data-aos-delay="500" alt="">
                         </div>
                         <div class="block_5__images__wrap">
-                            <img src="{{ asset('img/dress-cod-4.jpg') }}" data-aos-duration="1000" data-aos="fade-up" alt="">
-                            <img src="{{ asset('img/dress-cod-7.jpg') }}" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="600" alt="">
+                            <img src="{{ asset('img/dress-cod-4.webp') }}" data-aos-duration="1000" data-aos="fade-up" alt="">
+                            <img src="{{ asset('img/dress-cod-7.webp') }}" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="600" alt="">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="block_6">
-                <div class="container">
-                    <span class="block_6__title" src="{{ asset('img/dress-cod-1.jpg') }}" data-aos="zoom-out-up">
-                        АНКЕТА ГОСТЯ
-                    </span>
-                    <span class="block_6__pre_txt" data-aos="zoom-out-up">
-                        ПРОСИМ ПОДТВЕРДИТЬ  ВАШЕ ПРИСУТСТВИЕ НА НАШЕМ ПРАЗДНИКЕ, ЗАПОЛНИВ АНКЕТУ ГОСТЯ
-                    </span>
-                    <span class="block_6__pre_txt_info" data-aos="zoom-out-up">
-                        (анкета заполняется на каждого гостя отдельно)
-                    </span>
-                    <form id="rsvp-form" class="block_6__form">
-                        <span class="block_6__form__title">ВАШИ ИМЯ, ФАМИЛИЯ</span>
-                        <input name="name" class="block_6__form__input" type="text" placeholder="ВВЕДИТЕ ИМЯ И ФАМИЛИЮ">
-                        <span class="block_6__form__title">ПОДТВЕРДИТЕ ВАШЕ ПРИСУТСТВИЕ</span>
-                        <label class="radio-button first">
-                            <input type="radio" name="come" value="true">
-                            <span class="radio"></span>
-                            ПРИДУ ОБЯЗАТЕЛЬНО!
-                        </label>
-                        <label class="radio-button">
-                            <input type="radio" name="come" value="false">
-                            <span class="radio"></span>
-                            К СОЖАЛЕНИЮ, НЕ СМОГУ
-                        </label>
-                        <button type="submit" class="block_6__form__button">
-                            ОТПРАВИТЬ АНКЕТУ
-                        </button>
-                        @if ($errors->any())
-                            <div class="errors">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                    </form>
                 </div>
             </div>
             <div class="block_7">
@@ -214,13 +210,13 @@
                     </span>
                     <div class="block_7__wrap">
                         <div class="block_7__wrap__images">
-                            <img src="{{ asset('img/detail-1.jpg') }}" alt="">
-                            <img src="{{ asset('img/detail-2.jpg') }}" alt="">
+                            <img src="{{ asset('img/detail-1.webp') }}" alt="">
+                            <img src="{{ asset('img/detail-2.webp') }}" alt="">
                         </div>
-                        <img src="{{ asset('img/detail-1.jpg') }}" data-aos="fade-right" data-aos-duration="1000" alt="">
+                        <img src="{{ asset('img/detail-1.webp') }}" data-aos="fade-right" data-aos-duration="1000" alt="">
                         <div class="block_7__wrap__bless">
                             <span>
-                                Свои тёплые слова и пожелания приносите в сердцах, а подарки - в конверте.
+                                Нам бы хотелось, чтобы в этот день сердца были лёгкими, души - открытыми, настроение - праздничным, а подарки - упакованными в конверты.
                             </span>
                             <div class="block_7__wrap__stars">
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,8 +247,50 @@
                                 Спасибо!
                             </span>
                         </div>
-                        <img src="{{ asset('img/detail-2.jpg') }}" data-aos="fade-left" data-aos-duration="1000" alt="">
+                        <img src="{{ asset('img/detail-2.webp') }}" data-aos="fade-left" data-aos-duration="1000" alt="">
                     </div>
+                </div>
+            </div>
+            <div class="block_6">
+                <div class="container">
+                    <span class="block_6__title" src="{{ asset('img/dress-cod-1.webp') }}" data-aos="zoom-out-up">
+                        АНКЕТА ГОСТЯ
+                    </span>
+                    <span class="block_6__pre_txt" data-aos="zoom-out-up">
+                        Пожалуйста, подтвердите ваше присутствие на нашем празднике, заполнив анкету гостя
+                    </span>
+                    <span class="block_6__pre_txt_info" data-aos="zoom-out-up">
+                        (анкета заполняется на каждого гостя отдельно)
+                    </span>
+                    <form id="rsvp-form" class="block_6__form">
+                        <span class="block_6__form__title">ВАШИ ИМЯ, ФАМИЛИЯ</span>
+                        <input name="name" class="block_6__form__input" type="text" placeholder="ВВЕДИТЕ ИМЯ И ФАМИЛИЮ">
+                        <span class="block_6__form__error" id="name-error">Введите имя и фамилию</span>
+                        <span class="block_6__form__title two">ПОДТВЕРДИТЕ ВАШЕ ПРИСУТСТВИЕ</span>
+                        <label class="radio-button first">
+                            <input type="radio" name="come" value="true">
+                            <span class="radio"></span>
+                            ПРИДУ ОБЯЗАТЕЛЬНО!
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="come" value="false">
+                            <span class="radio"></span>
+                            К СОЖАЛЕНИЮ, НЕ СМОГУ
+                        </label>
+                        <span class="block_6__form__error" id="come-error">Ввыберите поле</span>
+                        <button type="submit" class="block_6__form__button">
+                            ОТПРАВИТЬ АНКЕТУ
+                        </button>
+                        @if ($errors->any())
+                            <div class="errors">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                    </form>
                 </div>
             </div>
             <div class="block_8">
@@ -323,40 +361,40 @@
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-1.jpg') }}" alt="">
-                                    <img src="{{ asset('img/slider-1.jpg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-1.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-1.webp') }}" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-2.jpg') }}" alt="">
-                                    <img src="{{ asset('img/slider-2.jpg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-2.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-2.webp') }}" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-3.jpeg') }}" alt="">
-                                    <img src="{{ asset('img/slider-3.jpeg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-3.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-3.webp') }}" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-4.jpg') }}" alt="">
-                                    <img src="{{ asset('img/slider-4.jpg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-4.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-4.webp') }}" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-5.jpg') }}" alt="">
-                                    <img src="{{ asset('img/slider-5.jpg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-5.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-5.webp') }}" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-6.jpeg') }}" alt="">
-                                    <img src="{{ asset('img/slider-6.jpeg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-6.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-6.webp') }}" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-7.jpeg') }}" alt="">
-                                    <img src="{{ asset('img/slider-7.jpeg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-7.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-7.webp') }}" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-8.jpg') }}" alt="">
-                                    <img src="{{ asset('img/slider-8.jpg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-8.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-8.webp') }}" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-9.jpg') }}" alt="">
-                                    <img src="{{ asset('img/slider-9.jpg') }}" alt="">
+                                    <img class="swiper-slide__filter" src="{{ asset('img/slider-9.webp') }}" alt="">
+                                    <img src="{{ asset('img/slider-9.webp') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-button-next"></div>
@@ -382,7 +420,6 @@
                                 ЗАКРЫТЬ
                             </button>
                         </div>
-                        <!-- Ваш HTML код модального окна -->
                     </div>
                 </div>
             </div>
@@ -432,13 +469,36 @@
     let domen = window.location.hostname
 
     document.getElementById('rsvp-form').addEventListener('submit', function(e) {
+        let valid = true
+
         e.preventDefault();
-        myModal.open('#loader')
 
         const form = this;
         const name = form.elements['name'].value;
         const come = form.elements['come'].value;
 
+        const nameError = document.querySelector('#name-error')
+        const comeError = document.querySelector('#come-error')
+
+        if (name == '' || name == null) {
+            valid = false
+            nameError.className = 'block_6__form__error active'
+        } else {
+            nameError.className = 'block_6__form__error'
+        }
+
+        if (come == '' || name == null) {
+            valid = false
+            comeError.className = 'block_6__form__error active'
+        } else {
+            comeError.className = 'block_6__form__error'
+        }
+
+        if (valid == false) {
+            return
+        }
+
+        myModal.open('#loader')
         axios.post(`/api/rsvp-submit`, {
             name: name,
             come: come
@@ -493,4 +553,30 @@
 
     updateTimer(); // обновить сразу
     const timerInterval = setInterval(updateTimer, 1000);
+
+    
+    const audio = document.getElementById('bgMusic');
+    const toggleBtn = document.getElementById('toggleMusicBtn');
+
+    // Автовоспроизведение при загрузке страницы
+    window.addEventListener('DOMContentLoaded', () => {
+        if (audio.paused) {
+            audio.play();
+            toggleBtn.checked = false
+        } else {
+            audio.pause();
+            toggleBtn.checked = true
+        }
+    });
+
+    // Переключение музыки
+    toggleBtn.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            toggleBtn.checked = false
+        } else {
+            audio.pause();
+            toggleBtn.checked = true
+        }
+    });
 </script>

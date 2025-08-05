@@ -23,4 +23,12 @@ class AdminController extends Controller
 
         return view('admin.guests', compact('guests', 'filter'));
     }
+
+    public function destroy($id)
+    {
+        $guest = Guests::findOrFail($id);
+        $guest->delete();
+
+        return redirect()->back()->with('success', 'Гость удалён.');
+    }
 }
